@@ -1,7 +1,10 @@
 ﻿using System;
+using Newtonsoft.Json;
+using PeopleManagement.Constants.SerializationConverters;
 
 namespace PeopleManagement.Constants
 {
+    [JsonConverter(typeof(RelationshipTypeSerializationConverter))]
     public class RelationshipType : IEquatable<RelationshipType>, IEquatable<string>
     {
         private readonly string relationshipType;
