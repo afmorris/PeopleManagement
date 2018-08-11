@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleManagement.Web", "PeopleManagement.Web\PeopleManagement.Web.csproj", "{B9E23128-9F2B-48CA-96B0-810A7857B050}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleManagement.Web", "PeopleManagement.Web\PeopleManagement.Web.csproj", "{B9E23128-9F2B-48CA-96B0-810A7857B050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleManagement.Models", "PeopleManagement.Models\PeopleManagement.Models.csproj", "{89FA1755-0CB1-4993-A05C-78F26D073FF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleManagement.Constants", "PeopleManagement.Constants\PeopleManagement.Constants.csproj", "{D47486E1-6949-47CD-A70D-5C6AC55E00CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{B9E23128-9F2B-48CA-96B0-810A7857B050}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9E23128-9F2B-48CA-96B0-810A7857B050}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9E23128-9F2B-48CA-96B0-810A7857B050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89FA1755-0CB1-4993-A05C-78F26D073FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89FA1755-0CB1-4993-A05C-78F26D073FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89FA1755-0CB1-4993-A05C-78F26D073FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89FA1755-0CB1-4993-A05C-78F26D073FF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47486E1-6949-47CD-A70D-5C6AC55E00CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47486E1-6949-47CD-A70D-5C6AC55E00CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47486E1-6949-47CD-A70D-5C6AC55E00CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47486E1-6949-47CD-A70D-5C6AC55E00CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
