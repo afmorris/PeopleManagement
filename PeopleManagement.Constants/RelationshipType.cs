@@ -35,11 +35,11 @@ namespace PeopleManagement.Constants
         
         public static bool operator ==(RelationshipType relationshipType1, RelationshipType relationshipType2) => relationshipType1?.Equals(relationshipType2) ?? relationshipType2 is null;
 
-        public static bool operator !=(RelationshipType gender1, RelationshipType relationshipType2) => !gender1?.Equals(relationshipType2) ?? !(relationshipType2 is null);
+        public static bool operator !=(RelationshipType relationshipType1, RelationshipType relationshipType2) => !relationshipType1?.Equals(relationshipType2) ?? !(relationshipType2 is null);
 
         public static bool operator ==(RelationshipType relationshipType1, string relationshipType2) => relationshipType1?.Equals(relationshipType2) ?? relationshipType2 is null;
 
-        public static bool operator !=(RelationshipType gender1, string relationshipType2) => !gender1?.Equals(relationshipType2) ?? !(relationshipType2 is null);
+        public static bool operator !=(RelationshipType relationshipType1, string relationshipType2) => !relationshipType1?.Equals(relationshipType2) ?? !(relationshipType2 is null);
 
         public override int GetHashCode() => relationshipType != null ? relationshipType.GetHashCode() : 0;
     }
