@@ -8,7 +8,7 @@ namespace PeopleManagement.Models.Builders
         private string firstName;
         private string middleName;
         private string lastName;
-        private Gender gender;
+        private Gender gender = Gender.Unspecified;
         private List<ImportantDate> importantDates = new List<ImportantDate>();
         private List<Relationship> relationships = new List<Relationship>();
 

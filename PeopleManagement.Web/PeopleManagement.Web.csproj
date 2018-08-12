@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PeopleManagement.Constants\PeopleManagement.Constants.csproj" />
+    <ProjectReference Include="..\PeopleManagement.Data\PeopleManagement.Data.csproj" />
     <ProjectReference Include="..\PeopleManagement.Models\PeopleManagement.Models.csproj" />
     <ProjectReference Include="..\PeopleManagement.ViewModels\PeopleManagement.ViewModels.csproj" />
   </ItemGroup>
