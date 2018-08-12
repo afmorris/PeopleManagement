@@ -2,7 +2,7 @@
 
 namespace PeopleManagement.Models
 {
-    public class Relationship
+    public class Relationship : BaseModel
     {
         public Person Owner { get; set; }
         public Person RelatedPerson { get; set; }

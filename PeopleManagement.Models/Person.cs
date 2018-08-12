@@ -1,6 +1,6 @@
 ﻿namespace PeopleManagement.Models
 {
-    public class Person
+    public class Person : BaseModel
     {
         
     }
