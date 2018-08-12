@@ -12,4 +12,10 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PeopleManagement.Constants\PeopleManagement.Constants.csproj" />
+    <ProjectReference Include="..\PeopleManagement.Models\PeopleManagement.Models.csproj" />
+    <ProjectReference Include="..\PeopleManagement.ViewModels\PeopleManagement.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>
