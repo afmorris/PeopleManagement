@@ -1,6 +1,11 @@
-﻿namespace PeopleManagement.Constants
+﻿using System;
+using Newtonsoft.Json;
+using PeopleManagement.Constants.SerializationConverters;
+
+namespace PeopleManagement.Constants
 {
-    public class ImportantDateType
+    [JsonConverter(typeof(ImportantDateTypeSerializationConverter))]
+    public class ImportantDateType : IEquatable<ImportantDateType>, IEquatable<string>
     {
         private readonly string importantDateType;
 
