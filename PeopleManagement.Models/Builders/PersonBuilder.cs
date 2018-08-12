@@ -1,4 +1,5 @@
-﻿using PeopleManagement.Constants;
+﻿using System.Collections.Generic;
+using PeopleManagement.Constants;
 
 namespace PeopleManagement.Models.Builders
 {
@@ -8,6 +9,8 @@ namespace PeopleManagement.Models.Builders
         private string middleName;
         private string lastName;
         private Gender gender;
+        private List<ImportantDate> importantDates = new List<ImportantDate>();
+        private List<Relationship> relationships = new List<Relationship>();
 
         public static PersonBuilder Default()
         {
@@ -32,15 +35,27 @@ namespace PeopleManagement.Models.Builders
             return this;
         }
 
-        public PersonBuilder Gender(Gender gender)
+        public PersonBuilder UseGender(Gender gender)
         {
             this.gender = gender;
             return this;
         }
 
+        public PersonBuilder UseImportantDates(List<ImportantDate> importantDates)
+        {
+            this.importantDates = importantDates;
+            return this;
+        }
+
+        public PersonBuilder UseRelationships(List<Relationship> relationships)
+        {
+            this.relationships = relationships;
+            return this;
+        }
+
         public Person Build()
         {
-            return new Person(firstName, middleName, lastName, gender);
+            return new Person(firstName, middleName, lastName, gender, importantDates, relationships);
         }
     }
 }
