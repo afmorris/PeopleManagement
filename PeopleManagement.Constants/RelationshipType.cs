@@ -11,8 +11,16 @@ namespace PeopleManagement.Constants
 
         internal RelationshipType(string relationshipType) => this.relationshipType = relationshipType;
 
-        public static RelationshipType Spouse = new RelationshipType(nameof(Spouse));
+        public static RelationshipType Acquaintance = new RelationshipType(nameof(Acquaintance));
+        public static RelationshipType Child = new RelationshipType(nameof(Child));
+        public static RelationshipType Fiancé = new RelationshipType(nameof(Fiancé));
+        public static RelationshipType Fiancée = new RelationshipType(nameof(Fiancée));
+        public static RelationshipType Grandchild = new RelationshipType(nameof(Grandchild));
+        public static RelationshipType Grandparent = new RelationshipType(nameof(Grandparent));
+        public static RelationshipType Parent = new RelationshipType(nameof(Parent));
+        public static RelationshipType Partner = new RelationshipType(nameof(Partner));
         public static RelationshipType Sibling = new RelationshipType(nameof(Sibling));
+        public static RelationshipType Spouse = new RelationshipType(nameof(Spouse));
 
         public override string ToString() => relationshipType;
 

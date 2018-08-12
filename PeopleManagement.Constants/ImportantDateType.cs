@@ -7,7 +7,9 @@
         internal ImportantDateType(string importantDateType) => this.importantDateType = importantDateType;
 
         public static ImportantDateType Birthday = new ImportantDateType(nameof(Birthday));
-        public static ImportantDateType Anniversary = new ImportantDateType(nameof(Anniversary));
+        public static ImportantDateType Engagement = new ImportantDateType(nameof(Engagement));
+        public static ImportantDateType Graduation = new ImportantDateType(nameof(Graduation));
+        public static ImportantDateType Marriage = new ImportantDateType(nameof(Marriage));
 
         public override string ToString() => importantDateType;
 
